@@ -1,0 +1,42 @@
+<h1>All Interns</h1>
+
+<table border="1">
+
+<tr>
+
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Domain</th>
+<th>Actions</th>
+
+</tr>
+
+{% for intern in interns %}
+
+<tr>
+
+<td>{{ intern[0] }}</td>
+<td>{{ intern[1] }}</td>
+<td>{{ intern[2] }}</td>
+<td>{{ intern[3] }}</td>
+
+<td>
+
+<a href="/edit/{{ intern[0] }}">
+Edit
+</a>
+
+|
+
+<a href="/delete/{{ intern[0] }}">
+Delete
+</a>
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>

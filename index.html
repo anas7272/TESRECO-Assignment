@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESRECO Internship</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+        }
+
+        .container{
+            text-align:center;
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(10px);
+            padding:50px;
+            border-radius:20px;
+            color:white;
+            width:80%;
+            max-width:700px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        h1{
+            font-size:3rem;
+            margin-bottom:15px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .company{
+            color:#fbbf24;
+        }
+
+        p{
+            font-size:1.2rem;
+            margin-bottom:25px;
+            line-height:1.6;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:12px 28px;
+            background:#fbbf24;
+            color:#111827;
+            text-decoration:none;
+            border-radius:30px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:translateY(-3px);
+            background:#f59e0b;
+        }
+
+        .icons{
+            margin-top:25px;
+            font-size:2rem;
+        }
+
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+                transform:translateY(-20px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to <span class="company">TESRECO's Internship</span></h1>
+
+        <p>
+            Congratulations on joining our internship program!
+            This journey will provide hands-on experience,
+            industry exposure, mentorship, and opportunities
+            to develop your technical and professional skills.
+        </p>
+
+        <a href="#" class="btn">Start Your Journey</a>
+
+        <div class="icons">
+            📚 
+        </div>
+    </div>
+
+</body>
+</html>

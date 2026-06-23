@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About TESRECO</title>
+</head>
+
+<body>
+
+    <h1>About TESRECO</h1>
+
+    <h2>Organization Overview</h2>
+    <p>{{ overview }}</p>
+
+    <h2>Internship Domains</h2>
+
+    <ul>
+
+        {% for domain in domains %}
+
+            <li>{{ domain }}</li>
+
+        {% endfor %}
+
+    </ul>
+
+    <h2>Mission</h2>
+    <p>{{ mission }}</p>
+
+    <h2>Vision</h2>
+    <p>{{ vision }}</p>
+
+</body>
+
+</html>
